@@ -5,5 +5,5 @@ urlpatterns = [
     
 	path('',BlogListView.as_view(), name='BlogListView'),
     path('blog/<int:pk>/', BlogDetailView.as_view(), name='BlogDetailView'),
-    
+    path('blog/new/', BlogNewView.as_view(), name = 'BlogNewView')
 	]
