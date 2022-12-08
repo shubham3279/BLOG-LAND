@@ -9,5 +9,7 @@
     <p>{{ all_Post_detail.body }}</p>
 </div>
 
+<a href="{% url 'BlogEditView' all_Post_detail.pk %}">+ Edit Blog Post</a>
+<p><a href="{% url 'BlogDeleteView' all_Post_detail.pk %}">+ Delete Blog Post</a></p>
 
 {% endblock content %}
